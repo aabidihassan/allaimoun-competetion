@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+/*--------------------header------------------------*/
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/*--------------------nav---------------------------*/
+.header nav {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*--------------------first_navbar +  All blocs--------------------*/
+.first_navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e7e7e7;
+    justify-content: space-between;
+    padding: 0px 40px 15px 40px;
+}
+
+/*--------------------first_navbar +  bloc1----------------------*/
+.bloc_1 {
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bloc_1 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bloc_1 a ion-icon {
+    font-size: 33px;
+    color: #000;
+}
+
+.bloc_1 a ion-icon:hover {
+    color: #007FA4;
+}
+
+/*--------------------first_navbar +  bloc2------------------------*/
+.bloc_2 {
+    display: flex;
+    width: fit-content;
+}
+
+.bloc_2 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bloc_2 a img {
+    object-fit: contain;
+}
+
+/*--------------------first_navbar +  bloc3------------------------*/
+.bloc_3 {
+    min-width: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloc_3 #sign, .user_name {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px dashed #ccc;
+}
+
+#sign {
+    margin-left: 2px;
+}
+
+.bloc_3 #sign:hover {
+    color: #007FA4;
+}
+
+/*--------------------second_navbar + links----------------------*/
+
+.second_navbar {
+    display: block;
+    background-color: #fff;
+    z-index: 500;
+}
+
+.second_navbar.fixe {
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+
+.second_navbar .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.items a {
+    text-decoration: none;
+    margin: 0px 15px 0px 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    text-transform: capitalize;
+    transition: border 0.1s ease-in-out;
+    line-height: 2.5;
+}
+
+.items a:hover {
+    border-bottom: 2px solid #007FA4;
+    color: #807e7e;
+}
+
+/***************************sidebar**************************/
+/**************************first_menu code*******************/
+.menu_first {
+    background-image: url("images/menara.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+    color: #Fff;
+    padding: 0;
+}
+
+.menu_first .menu_first_items {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 10, 0);
+    backdrop-filter: blur(4px);
+    padding: 10px 10px 0px 10px;
+    font-family: 'Source Sans Pro';
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 6%);
+}
+
+.menu_first_items .btn_close {
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn_close:active {
+    color: #F7941E;
+}
+
+.menu_first .offcanvas-title {
+    font-size: 14px;
+    height: fit-content;
+    margin-top: 35px;
+    font-weight: 700;
+}
+
+/****************dropdown************************/
+.dropdown {
+    display: block;
+}
+
+.dropdown .drop_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 10px;
+}
+
+.drop_block a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.drop_block .d_block_title {
+    width: fit-content;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    line-height: 0.7;
+    padding-right: 3px;
+}
+
+.drop_block .b_b {
+    border-bottom: 5px solid #007FA4;
+}
+
+.drop_block .b_c {
+    border-bottom: 5px solid #F7941E;
+}
+
+.d_block_title:hover {
+    color: #808080;
+}
+
+.drop_block .d_block_items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.d_block_items .ds_item {
+    list-style-type: none;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin: 3px 0px 3px 0px;
+}
+
+.ds_item:hover {
+    color: #808080;
+}

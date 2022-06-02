@@ -27,9 +27,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="assetClient/css/Login_Register_Forms.css">
     <link rel="stylesheet"
-        href="assetClient/bootstrap-5.1.3-dist/css/bootstrap.css">
+        href="assetAdmin/bootstrap-5.1.3-dist/css/bootstrap.css">
     <!--bootstrap css link-->
-    <script src="assetClient/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="assetAdmin/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <!--bootstrap js link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>

@@ -18,6 +18,9 @@
         <!-- STYLES CSS -->
         <link rel="stylesheet" href="assetAdmin/css/Dashboard_Profile.css">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
+                
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/528542a19d.js" crossorigin="anonymous"></script>
 
         <!-- BOX ICONS CSS-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -37,7 +40,7 @@
         <div class="l-navbar" id="navbar">
             <nav class="nav_b">
                 <div>
-                    <span class="nav__logos-text">Association Des parents</span>
+                    <span class="nav__logos-text"><i class="fa-solid fa-school-flag me-2 fs-3"></i>Association Des parents</span>
         
                     <ul class="nav__dict">
                         <a href="home.php" class="nav__lien active" title="Accueil">
@@ -59,10 +62,16 @@
 
         <main>
             <section class="first">
+                <div class="shadow p-2 mb-3 bg-body rounded">
+                    <div class="d-flex justify-content-center">
+                        <img src="./assetAdmin/images/logo_royaume.png" id="logo_royaume" class="rounded border-0"/>
+                    </div>
+                </div>
+
                 <h2 id="text-body" >Classement des participants</h2>  
                 <center>
                <div style="margin-top:5%; width:80%;">
-                <table id="table_id" class="display">
+                <table id="table_id" class="display pt-4">
                     <thead>
                         <tr>
                             <th>Participant</th>

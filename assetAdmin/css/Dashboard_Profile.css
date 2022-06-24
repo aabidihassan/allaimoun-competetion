@@ -9,6 +9,15 @@ body {
   overflow-x: hidden;
 }
 
+/**************************************************************************/
+#logo_royaume{
+padding-top: 3px;
+padding-bottom: 10px;
+width: 35%;
+height: auto;
+justify-content: center;
+}
+
 /*===== Colores =====*/
 :root {
   --first-color: #12192C;
@@ -72,7 +81,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 185px;
+  width: 245px;
   height: 100vh;
   background-color: #009dc1;
   padding: 1.25rem .5rem 2rem;
@@ -207,7 +216,7 @@ a {
 }
 
 .nav__texte {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 550;
 
 }
@@ -252,7 +261,7 @@ main {
 
 /**************************************************************************/
 .first {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -323,3 +332,9 @@ main {
     transform: translateY(0);
   }
 }
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 0px solid #aaa !important;
+  border-bottom: 1px solid #aaa !important;
+}
+

@@ -46,6 +46,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="assetAdmin/js/Collaborateurs.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/528542a19d.js" crossorigin="anonymous"></script>
         <!-- BOX ICONS CSS-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="assetAdmin/bootstrap-5.1.3-dist/css/bootstrap.css">
@@ -66,7 +68,7 @@
         <div class="l-navbar" id="navbar">
         <nav class="nav_b">
                 <div>
-                    <span class="nav__logos-text">Association Des parents</span>
+                    <span class="nav__logos-text"><i class="fa-solid fa-school-flag me-2 fs-3"></i>Association Des parents</span>
         
                     <ul class="nav__dict">
                         <a href="home.php" class="nav__lien" title="Accueil">
@@ -87,10 +89,16 @@
         </div>
         <main>
            <section class="first">
-                <h2 id="text-body" >Factures de <?php echo $user['nom'] . " " . $user['prenom']; ?></h2> 
+            
+                <div class="shadow p-2 mb-3 bg-body rounded">
+                    <div class="d-flex justify-content-center">
+                        <img src="./assetAdmin/images/logo_royaume.png" id="logo_royaume" class="rounded border-0"/>
+                    </div>
+                </div>
+                <h2 id="text-body" >Factures de <span class="text-primary"><?php echo $user['nom'] . " " . $user['prenom']; ?></span></h2> 
 
                    
-                   <div class="border_vide"></div>
+                   <!-- <div class="border_vide"></div> -->
                    <!----------------------ajouter un nouveau collaborateurs--------------------->
                    
                    <div class="hidden_formulaires">
@@ -102,28 +110,34 @@
                             <div class="form_container_utilisateur">
                                 <div class="nom_prenom_title">
                                     <div class="petit_titre">
-                                        <span>Facture</span>
+                                        <span><i class="fa-solid fa-dollar-sign me-2"></i>| Facture</span>
                                     </div>
                                     <div class="nom_prenom">
-                                        <select name="mois" id="mois">
-                                            <option selected hidden>Mois</option>
-                                            <?php
-                                                for($i=1 ; $i<13 ; $i++) echo "<option value=\"" . $i ."\">" . $i . "</option>";
-                                            ?>
-                                        </select>
-
-                                        <select name="type" id="type">
-                                            <option selected hidden>Type</option>
-                                            <option value="elec">Electricite</option>
-                                            <option value="eau">Eau</option>
-                                        </select>
-                                        <input type="digital" name="montant" id="montant" placeholder="Montant">
-                                        
+                                        <div class="row g-3">
+                                            <div class="col-md">
+                                                <select name="mois" id="mois">
+                                                    <option selected hidden>Mois</option>
+                                                    <?php
+                                                        for($i=1 ; $i<13 ; $i++) echo "<option value=\"" . $i ."\">" . $i . "</option>";
+                                                    ?>
+                                                </select>
+                                            </div>
+                                            <div class="col-md">
+                                                <select name="type" id="type">
+                                                    <option selected hidden>Type</option>
+                                                    <option value="elec">Electricite</option>
+                                                    <option value="eau">Eau</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md">
+                                                <input type="digital" name="montant" id="montant" placeholder="Montant">
+                                            </div>
+                                        </div>
                                         
                                     </div>
                                 </div>
                                 
-                                <div class="submit">
+                                <div class="submit ms-5">
                                     <div class="btn_formulaires">
                                     <button type="submit" name="add">Ajouter</button>
                                     </div>
@@ -183,7 +197,7 @@
 
                 <center>
                <div style="margin-top:5%; width:80%;">
-                <table id="table_id" class="display">
+                <table id="table_id" class="display pt-4">
                     <thead>
                         <tr>
                             <th>Mois</th>

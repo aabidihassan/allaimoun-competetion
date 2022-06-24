@@ -25,7 +25,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assetClient/css/Login_Register_Forms.css">
+    <link rel="stylesheet" href="./assetAdmin/css/Login_Register_Forms.css">
     <link rel="stylesheet"
         href="./assetAdmin/bootstrap-5.1.3-dist/css/bootstrap.css">
     <!--bootstrap css link-->

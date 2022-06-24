@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 02, 2022 at 08:44 PM
+-- Generation Time: Jun 24, 2022 at 11:56 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -40,12 +40,36 @@ CREATE TABLE `facture` (
 --
 
 INSERT INTO `facture` (`id`, `mois`, `type`, `montant`, `participant`) VALUES
-(5, 1, 'elec', 100, 1),
-(6, 1, 'eau', 200, 1),
-(7, 2, 'eau', 200, 1),
-(8, 2, 'eau', 200, 4),
-(9, 4, 'eau', 345, 4),
-(10, 3, 'elec', 493, 5);
+(11, 1, 'elec', 200, 6),
+(12, 1, 'eau', 150, 6),
+(13, 2, 'elec', 250, 6),
+(14, 2, 'eau', 100, 6),
+(15, 3, 'elec', 100, 6),
+(16, 3, 'eau', 150, 6),
+(17, 1, 'elec', 200, 7),
+(18, 1, 'eau', 300, 7),
+(19, 2, 'elec', 300, 7),
+(20, 2, 'eau', 100, 7),
+(21, 3, 'elec', 200, 7),
+(22, 3, 'eau', 150, 7),
+(23, 1, 'elec', 250, 9),
+(24, 1, 'eau', 100, 9),
+(25, 2, 'elec', 150, 9),
+(26, 2, 'eau', 200, 9),
+(27, 3, 'elec', 200, 9),
+(28, 3, 'eau', 250, 9),
+(29, 1, 'elec', 100, 10),
+(30, 1, 'eau', 130, 10),
+(31, 2, 'elec', 200, 10),
+(32, 2, 'eau', 100, 10),
+(33, 3, 'elec', 150, 10),
+(34, 3, 'eau', 190, 10),
+(35, 1, 'elec', 130, 8),
+(36, 1, 'eau', 150, 8),
+(37, 2, 'elec', 240, 8),
+(38, 2, 'eau', 300, 8),
+(39, 3, 'elec', 200, 8),
+(40, 3, 'eau', 250, 8);
 
 -- --------------------------------------------------------
 
@@ -66,9 +90,11 @@ CREATE TABLE `Participation` (
 --
 
 INSERT INTO `Participation` (`id`, `nom`, `prenom`, `telephone`, `adresse`) VALUES
-(1, 'Aabidi', 'Hassan', '0637842698', 'Izdihar Marrakech'),
-(4, 'Elhajjout', 'Abderrahman', '0666666666', 'Marrakech'),
-(5, 'Essakhi', 'Hamza', '0612345678', 'Layoune');
+(6, 'Aabidi', 'Hassan', '0637842698', 'izdihar Marrakech'),
+(7, 'Elhajjout', 'Abderrahman', '0612345678', 'Merjane Marrakech'),
+(8, 'Hamza', 'Laila', '0612341234', 'Mabrouka Marrakech'),
+(9, 'Lechhab', 'Hind', '0612345678', 'Douha Marrakech'),
+(10, 'Essakhi', 'Hamza', '0600000000', 'Sidi Abbad Marrakech');
 
 -- --------------------------------------------------------
 
@@ -88,9 +114,11 @@ CREATE TABLE `total` (
 --
 
 INSERT INTO `total` (`id`, `totaleau`, `totalelec`, `participant`) VALUES
-(2, 400, 100, 1),
-(3, 545, 0, 4),
-(4, 0, 493, 5);
+(5, 400, 550, 6),
+(6, 550, 700, 7),
+(7, 550, 600, 9),
+(8, 420, 450, 10),
+(9, 700, 570, 8);
 
 -- --------------------------------------------------------
 
@@ -147,19 +175,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `facture`
 --
 ALTER TABLE `facture`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `Participation`
 --
 ALTER TABLE `Participation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `total`
 --
 ALTER TABLE `total`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `user`
